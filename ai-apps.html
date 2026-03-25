@@ -4,108 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Apps</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-
-<style>
-  body {
-    background: #f5f7fb;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .project-section {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 20px;
-  }
-
-  .project-card {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 40px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-  }
-
-  .project-title {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-
-  .project-subtitle {
-    color: #555;
-    margin-bottom: 10px;
-  }
-
-  .project-meta {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
-  }
-
-  .section-title {
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: 600;
-    border-left: 4px solid #38bdf8;
-    padding-left: 10px;
-  }
-
-  .project-text {
-    margin-top: 10px;
-  }
-
-  .project-list {
-    padding-left: 20px;
-    margin-top: 10px;
-  }
-
-  .project-list li {
-    margin-bottom: 10px;
-  }
-
-  .highlight-box {
-    background: #f0f9ff;
-    border-left: 4px solid #38bdf8;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-
-  .tech-stack {
-    margin-top: 15px;
-    font-size: 14px;
-    color: #444;
-  }
-
-  .cta-buttons {
-    margin-top: 30px;
-  }
-
-  .button {
-    display: inline-block;
-    padding: 10px 18px;
-    border-radius: 8px;
-    background: #38bdf8;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  .button.secondary {
-    background: #e5e7eb;
-    color: #111;
-    margin-left: 10px;
-  }
-</style>
 </head>
 
 <body>
@@ -121,74 +21,101 @@
   </div>
 </nav>
 
-<section class="project-section">
-  <div class="project-card">
+ <style>
+  h2 {
+    margin-top: 40px;
+  }
 
-    <h1 class="project-title">AI Multi-Agent Research System</h1>
+  h3 {
+    margin-top: 25px;
+  }
 
-    <div class="project-subtitle">
-      Autonomous AI system that plans, executes, and delivers research insights end-to-end
-    </div>
+  ul, ol {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
 
-    <div class="project-meta">
-      Built as part of AI Agent architecture exploration and real-world automation use cases
-    </div>
+  li {
+    margin-bottom: 8px;
+  }
+</style> 
 
-    <p class="project-text">
-      This project showcases a practical implementation of AI agents working together to automate
-      the full research process. Instead of a single model answering a question, the system
-      orchestrates multiple specialized agents that collaborate to plan research, gather data,
-      synthesize insights, and deliver results.
-    </p>
+<section>
+  <h2>AI Multi-Agent Research System</h2>
 
-    <div class="highlight-box">
-      <strong>Key idea:</strong> AI is not just a chatbot — it’s a system of coordinated agents solving real tasks.
-    </div>
+  <p>
+    This project is an AI-powered research assistant that automates the entire process of gathering,
+    analyzing, and delivering insights on any given topic. It combines multiple specialized AI agents
+    into a single workflow that plans research, retrieves information from the web, synthesizes findings
+    into a structured report, and delivers the results via email.
+  </p>
 
-    <h2 class="section-title">What it does</h2>
-    <ul class="project-list">
-      <li>Breaks down complex questions into structured research steps</li>
-      <li>Performs multiple web searches in parallel for faster results</li>
-      <li>Generates detailed, structured reports (1000+ words)</li>
-      <li>Provides summaries and follow-up research suggestions</li>
-      <li>Sends formatted results via email automatically</li>
-      <li>Streams progress in real time through a simple web interface</li>
-    </ul>
+  <h3>Key Capabilities</h3>
+  <ul>
+    <li><strong>Automated research planning:</strong> Breaks down complex queries into targeted search actions</li>
+    <li><strong>Parallel information retrieval:</strong> Executes multiple web searches concurrently for speed and efficiency</li>
+    <li><strong>Intelligent synthesis:</strong> Generates detailed, structured reports (1000+ words) with summaries and follow-up questions</li>
+    <li><strong>End-to-end automation:</strong> Delivers results as a formatted HTML email</li>
+    <li><strong>Real-time user experience:</strong> Streams progress updates during execution</li>
+  </ul>
 
-    <h2 class="section-title">How it works</h2>
-    <p class="project-text">
-      The system uses a multi-agent architecture where each agent has a clear responsibility:
-    </p>
-    <ul class="project-list">
-      <li><strong>Planner Agent</strong> – defines research strategy</li>
-      <li><strong>Search Agent</strong> – retrieves and summarizes information from the web</li>
-      <li><strong>Writer Agent</strong> – creates a cohesive, structured report</li>
-      <li><strong>Email Agent</strong> – formats and sends the final output</li>
-    </ul>
+  <h3>How It Works</h3>
+  <p>
+    The system orchestrates a pipeline of AI agents, each responsible for a specific task:
+  </p>
+  <ol>
+    <li><strong>Planner Agent</strong> – analyzes the query and defines a research strategy</li>
+    <li><strong>Search Agent</strong> – gathers relevant information using web search tools</li>
+    <li><strong>Writer Agent</strong> – synthesizes results into a comprehensive report</li>
+    <li><strong>Email Agent</strong> – formats and sends the final output</li>
+  </ol>
 
-    <h2 class="section-title">Technical highlights</h2>
-    <ul class="project-list">
-      <li>Multi-agent orchestration with clear separation of responsibilities</li>
-      <li>Asynchronous execution with parallel processing (Python asyncio)</li>
-      <li>Structured outputs using typed schemas (Pydantic)</li>
-      <li>Tool-enabled agents (web search, email API integration)</li>
-      <li>Streaming UX with real-time updates (Gradio)</li>
-      <li>Traceability of agent workflows for debugging and transparency</li>
-    </ul>
+  <h3>Technical Highlights</h3>
+  <ul>
+    <li>Multi-agent architecture with clear separation of responsibilities</li>
+    <li>Asynchronous execution with parallel task processing (Python asyncio)</li>
+    <li>Structured outputs using typed schemas (Pydantic)</li>
+    <li>Tool-augmented AI agents (web search, email API integration)</li>
+    <li>Streaming responses for improved user experience (Gradio interface)</li>
+    <li>Traceability and observability of agent workflows</li>
+  </ul>
 
-    <h2 class="section-title">Tech stack</h2>
-    <div class="tech-stack">
-      Python · Asyncio · Gradio · OpenAI Agents SDK · Pydantic · SendGrid API
-    </div>
+  <h3>Technologies Used</h3>
+  <p>
+    Python, Asyncio, Gradio, OpenAI Agents SDK, Pydantic, SendGrid API
+  </p>
 
+  <h3>Impact</h3>
+  <p>
+    This project demonstrates how AI can move beyond simple chat interfaces into autonomous,
+    goal-oriented systems. It showcases practical implementation of AI agents working together
+    to solve real-world tasks, highlighting skills in AI architecture, orchestration, and
+    product-oriented design.
+  </p>
 
-    <div class="cta-buttons">
-      <a href="#" class="button">View Demo</a>
-      <a href="#" class="button secondary">View Code</a>
-    </div>
-
+  <div class="card">
+    <a href="#" class="button">View Demo</a>
   </div>
 </section>
+  
+#<section class="section" id="projects">
+#  <h2>AI Applicationss</h2>
+#
+#  <div class="card">
+#    <h3>AI Invoice Analyzer</h3>
+#    <p>Automated invoice validation using LLM + business rules engine.</p>
+#    <a href="#" class="button">View Details</a>
+# </div>
+
+ # <div class="card">
+ #   <h3>Finance Knowledge Assistant (RAG)</h3>
+  #  <p>AI assistant answering accounting & asset management questions.</p>
+ #   <a href="#" class="button">View Demo</a>
+#  </div>
+
+#</section>
+
+
 
 <footer>
   © 2026 Aneta Szczesniak
